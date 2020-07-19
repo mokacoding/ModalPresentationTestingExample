@@ -15,9 +15,26 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhR-GP-Qd1">
+                                <rect key="frame" x="16" y="432" width="382" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="iai-tc-sKq"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bhR-GP-Qd1" secondAttribute="trailing" constant="16" id="7Yv-IM-QDT"/>
+                            <constraint firstItem="bhR-GP-Qd1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="iUc-iR-JY6"/>
+                            <constraint firstItem="bhR-GP-Qd1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="suD-YT-aJo"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="button" destination="bhR-GP-Qd1" id="anF-qB-RfO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

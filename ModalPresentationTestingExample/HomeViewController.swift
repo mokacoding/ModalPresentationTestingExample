@@ -1,3 +1,6 @@
 import UIKit
 
-class HomeViewController: UIViewController {}
+class HomeViewController: UIViewController {
+
+    @IBOutlet let button: UIButton!
+}
